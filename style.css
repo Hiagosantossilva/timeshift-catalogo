@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0px;
+    color: white;
+    font-family: Raleway;
+    line-height: 30px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+  }
+
+h1{
+    font-weight: 300;
+    text-align: center;
+    font-size: 2.3em;
+}
+
+.logo{
+    padding: 55px;
+}
+
+footer{
+    margin: 0;
+    padding: 55px;
+    background-color: #3a0eaf;
+    text-align: left;
+}
+
+footer > h2{
+    font-weight: 500;
+}
+
+footer > p{
+    font-weight: 100;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.redes-sociais{
+    padding: 45px;
+    margin: auto;
+    text-align: center;
+}
+
+body{
+  background-image: url(images/background1.png);
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+
+.slider-container {
+  width: 100%;
+  height: 85vh;
+  display: flex;  
+  align-items: center; 
+  justify-content: center; 
+  
+}
+
+.slider-img{
+  background-image: linear-gradient( #dc13ea, #1e00ff); 
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.26);
+}
+
+.slider-container img{
+  opacity: 25%;
+}
+.slider-images{
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+.slider-images img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider-img{
+  width: 90px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.7s ease;
+}
+.slider-images .slider-img:first-child, .slider-images .slider-img:last-child{
+  height: 300px;
+}
+.slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(6){
+  height: 400px;
+}
+.slider-images .slider-img:nth-child(3), .slider-images .slider-img:nth-child(4), .slider-images .slider-img:nth-child(5){
+  height: 505px;
+}
+
+.slider-img h1{
+  font-size: 20px; 
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  writing-mode: vertical-rl; 
+  transform: rotate(180deg); 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg); 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  letter-spacing: 7px;
+}
+.details{
+  position: absolute;
+  bottom: 43px;
+  left: 43px;
+}
+.details h2{
+  letter-spacing: 5px;
+  font-size: 26px;
+  font-weight: 300;
+  text-align: left;
+  line-height: 44px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.7s ease;
+  display: none;
+}
+.details p{
+  font-size: 20px;
+  width: 170px;
+  font-weight: 200;
+  text-align: left;
+  line-height: 33px;
+  text-align: left;
+  color: #fff;
+  transition: 0.7s ease;
+  display: none;
+  padding: 10px;
+  background-color: #3a0eaf;
+}
+.slider-img.active{
+  width: 550px !important;
+  height: 600px !important;
+}
+.slider-img.active h1{
+   display: none;
+}
+.slider-img.active .details p, .slider-img.active .details h2{
+  display: block;
+}
+
+.seção1{
+  background-color: black;
+  height: 40vh;
+  text-align: center;
+  padding: 80px;
+}
+
+.seção1 p{
+  font-weight: 200;
+  width: 800px;
+  margin: auto;
+}
+
+.seção2{
+  background-color: #3a0eaf;
+  padding: 80px;
+  columns: 3;
+}
+.seção2 li{
+  height: 300px;
+}
+.seção3 {
+  background-color: black;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.seção3 h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.seção3 p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.relatos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.relato {
+  background-color: #3a0eaf;
+  color: white;
+  text-align: left;
+  padding: 40px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.relato p {
+  font-size: 14px;
+  margin: auto;
+  
+}
+
+.relato span{
+  text-align: center;
+  vertical-align: bottom;
+  margin: auto;
+  margin-left: 25px;
+}
+.autor {
+  display: flex;
+  flex-direction: row;
+  text-wrap: nowrap;
+  align-items: left;
+}
+
+.autor img {
+  width: 60px;
+  height: 60px;
+}
+
+.autor span {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.seção4{
+  margin-top: -10px;
+  background-color: black;
+  height: 30vh;
+  padding: 80px;
+  text-align: center;
+}
+.seção4 p {
+  width: 800px;
+  font-weight: 200;
+  text-align: center;
+  margin: auto;
+}
+.seção4 img{
+  margin: 30px;
+}
+.redes-sociais{
+  background-color: black;
+}
+
+/* Configurações para celular e tablet */
+
+@media screen and (max-width: 850px) {
+  body {
+    background-size: cover;
+    height: auto;
+
+  }
+  #slider{
+    top: 0 !important;
+    padding: 0px;
+  }
+  .title{
+    font-size: 30px;
+    margin: 15px;
+  }
+  .slider-container {
+    position: relative;
+    display: contents;
+    height: 120vh;
+    padding: 0;
+  }
+  .slider-img.active{
+    width: 80vw !important;
+  }
+  .slider-img {
+    margin: auto;
+    max-height: 140px;
+    width: 450px;
+    transform: none !important;
+  }
+
+  .slider-images {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: left;
+    text-align: left;
+    gap: 5px;
+  }
+
+
+  .slider-img h1 {
+    left: 0 !important;
+    right: 0 !important;
+    font-size: 16px;
+    letter-spacing: 3px;
+    transform: none !important;
+    writing-mode: horizontal-tb; 
+
+  }
+
+  .details h2 {
+    font-size: 18px;
+  }
+
+  .details p {
+    font-size: 14px;
+    width: 150px;
+    height: 45px;
+  }
+
+  .seção1 {
+    padding: 40px;
+    height: 80vw;
+  }
+
+  .seção1 p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .seção2 {
+    columns: 1;
+    padding: 40px;
+  }
+
+  .seção2 li {
+    height: 50vw;
+  }
+
+  .seção3 {
+    padding: 20px;
+  }
+
+  .seção3 h2 {
+    margin: 20px;
+    font-size: 24px;
+  }
+
+  .seção3 p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .relatos {
+    flex-direction: column;
+  }
+
+  .relato {
+    width: 100%;
+    height: auto;
+  }
+
+  .autor img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .seção4 {
+    height: auto;
+    padding: 40px;
+  }
+
+  .seção4 p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+}
